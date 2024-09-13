@@ -1,0 +1,54 @@
+import random
+plyer1='игорь'
+plyer2='Вася'
+
+spizal=random.randint(5,10)
+spizal2=random.randint(5,10)
+points_duel = spizal*random.randint(3,10)
+points_duel2 = spizal2*random.randint(3,10)
+print(f"{plyer1}: {spizal}")
+print(f"{plyer2}: {spizal2}")
+zagadka= random.choice([True,False])
+zagadka2= random.choice([True,False])
+
+total_points = points_duel
+total_points2 = points_duel2
+
+if zagadka:
+    spizal= random.randint(30,50)
+else:
+    spizal=0
+    if zagadka2:
+        spizal2 = random.randint(30, 50)
+    else:
+        spizal2 = 0
+        total_points += spizal
+        total_points2 += spizal2
+
+        print(f"{plyer1}: {total_points}")
+        print(f"{plyer2}: {total_points2}")
+
+if   passed1:
+ points1_aglity = 40
+else:
+     points1_aglity = 0
+     if passed2:
+         points2_aglity = 40
+     else:
+         points2_aglity = 0
+         total_points += points1_aglity
+         total_points2 += points2_aglity
+
+         print(f"{plyer1}: {points1_aglity}")
+         print(f"{plyer2}: {points2_aglity}")
+
+         bonus1 = random.choice([True,False])
+         bonus2 = random.choice([True, False])
+
+         friends1 = random.choice([True, False])
+         friends2 = random.choice([True, False])
+
+         golda= 0
+         golda2= 0
+         if bonus1 or friends1:
+             gud1 = random.randint(0,10)
